@@ -1,3 +1,4 @@
-flask
-flask-RESTful
-requests
+requests==2.22.0
+Flask==1.1.2
+Flask-RESTful==0.3.8
+
