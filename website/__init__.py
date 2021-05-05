@@ -12,13 +12,17 @@ def app():
     # Global items list to be held in memory
     items = []
     
-    
+    # Override nessesary functions
     class Items(Resource):        
 
+        # Return Items to client
         def get(self):
             return items 
 
         def post(self):
+            # Receive json data
+            # Interate through possible list of Dictionaries
+            # Append to items list
             json_data = request.get_json()
             for item in json_data:
                 items.append(item)

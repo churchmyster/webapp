@@ -1,7 +1,7 @@
 import requests
 import json
 
-BASE = "http://127.0.0.1:3000/"
+BASE = "http://0.0.0.0:3000/"
 
 items = [{"id":25, "name": "Albert"},{"id":30, "name": "Mary"}]
 
